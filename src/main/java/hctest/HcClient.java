@@ -24,10 +24,8 @@ public class HcClient {
   private static HazelcastInstance hc;
 
   public static void main(String[] args) throws Exception {
-//    Integer numProducts = Integer.valueOf(args[0]);
-//    Integer numReadThreads = Integer.valueOf(args[1]);
-      Integer numProducts = 100000;
-      Integer numReadThreads = 10;
+    Integer numProducts = Integer.valueOf(args[0]);
+    Integer numReadThreads = Integer.valueOf(args[1]);
 
     hc = getHazelcastInstance();
 
